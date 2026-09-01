@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formação em Estimulação NeuroCriativa®</title>
+  <meta name="description" content="Formação científica e criativa para profissionais que atuam com idosos e envelhecimento saudável. Método N.E.U.R.O.® · 180h · Certificado.">
+  <meta name="author" content="Estimulação NeuroCriativa®">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta property="og:image" content="site-icon.webp">
+  <meta name="twitter:image" content="site-icon.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Formação em Estimulação NeuroCriativa®">
+  <meta property="og:description" content="Metodologia clínica que integra neurociência, psicologia e processos criativos para o envelhecimento saudável.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+  <style>
+    :root{
+      --off:#faf8f4;
+      --beige:#f3eee7;
+      --petrol:#3d6e72;
+      --petrol-deep:#274d50;
+      --sage:#8cafa7;
+      --sage-soft:#c3d8d2;
+      --gold:#bd994d;
+      --gold-soft:#dec995;
+      --text:#27474a;
+      --muted:#65787a;
+      --border:#ded8cf;
+      --shadow-soft:0 1px 2px rgba(39,77,80,.04),0 8px 30px rgba(39,77,80,.06);
+      --shadow-card:0 2px 6px rgba(39,77,80,.05),0 20px 50px -20px rgba(39,77,80,.15);
+      --serif:'Fraunces',Georgia,serif;
+      --sans:'Inter',system-ui,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:78px}
+    body{margin:0;background:var(--off);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    h1,h2,h3,h4,p{margin-top:0}
+    h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.025em}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    strong{font-weight:600}
+    .container{width:min(1180px,calc(100% - 48px));margin:0 auto}
+    .container-sm{width:min(900px,calc(100% - 48px));margin:0 auto}
+    .section{padding:96px 0}
+    .beige{background:var(--beige)}
+    .petrol-bg{background:var(--petrol-deep);color:var(--off)}
+    .eyebrow{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:22px;color:var(--petrol);font-size:11px;text-transform:uppercase;letter-spacing:.28em;font-weight:500}
+    .eyebrow:before,.eyebrow:after{content:"";width:32px;height:1px;background:currentColor;opacity:.6}
+    .eyebrow.light{color:var(--gold)}
+    .section-title{font-size:clamp(38px,5vw,54px);line-height:1.08;color:var(--petrol-deep)}
+    .lead{color:rgba(39,77,80,.72);line-height:1.8}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:15px 28px;font-weight:500;font-size:14px;transition:.25s;border:0;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--petrol);color:var(--off)}
+    .btn-gold{background:linear-gradient(135deg,var(--gold),#d1b169);color:var(--petrol-deep);box-shadow:0 10px 30px -10px rgba(189,153,77,.55)}
+    .btn-ghost{border:1px solid rgba(61,110,114,.3);color:var(--petrol);background:transparent}
+    .btn-light{border:1px solid rgba(250,248,244,.32);color:rgba(250,248,244,.92)}
+    .icon{width:22px;height:22px;stroke-width:1.5}
+    header{position:fixed;left:0;right:0;top:0;z-index:100;background:rgba(250,248,244,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(222,216,207,.7)}
+    .nav{height:70px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:28px}
+    .brand-wordmark{justify-self:start;font-family:var(--serif);font-size:18px;font-weight:500;letter-spacing:-.02em;color:var(--petrol-deep);white-space:nowrap}
+    .brand-wordmark em{font-style:italic;color:var(--petrol);font-weight:400}
+    nav.desktop{justify-self:center;display:flex;align-items:center;gap:38px;font-size:14px;color:rgba(39,77,80,.76);white-space:nowrap}
+    nav.desktop a:hover{color:var(--petrol)}
+    .nav-cta{justify-self:end;padding:11px 22px;font-size:12px}
+    .hero{position:relative;padding:142px 0 0;background:
+      radial-gradient(ellipse at top right,rgba(195,216,210,.45),transparent 60%),
+      radial-gradient(ellipse at bottom left,rgba(222,201,149,.28),transparent 55%),
+      linear-gradient(180deg,#faf8f4,#f6f1ea);overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:72px;align-items:center;padding-bottom:82px}
+    .hero-brand{display:flex;align-items:center;gap:14px;margin-bottom:25px}
+    .hero-brand .sep{width:1px;height:32px;background:rgba(61,110,114,.2)}
+    .hero-brand .formation{font-size:12px;letter-spacing:.28em;color:rgba(61,110,114,.6)}
+    .hero h1{font-size:clamp(54px,6vw,76px);line-height:1.01;color:var(--petrol-deep);margin-bottom:28px}
+    .hero h1 em{color:var(--petrol);font-style:italic}
+    .hero h1 sup{font-size:24px}
+    .hero-copy{font-size:18px;line-height:1.75;color:rgba(39,77,80,.72);max-width:610px}
+    .hero-copy .emphasis{color:var(--petrol);font-weight:500}
+    .hero-points{display:flex;flex-wrap:wrap;gap:14px 30px;margin:28px 0 36px;font-size:14px;color:rgba(39,77,80,.75)}
+    .hero-points span{display:flex;align-items:center;gap:8px}
+    .gold{color:var(--gold)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+    .hero-media{position:relative}
+    .hero-photo{aspect-ratio:4/5;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-card);background:linear-gradient(145deg,#dce8e3,#e8d9bb)}
+    .hero-photo img{width:100%;height:100%;object-fit:cover}
+    .image-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:rgba(39,77,80,.7);font-family:var(--serif);font-size:22px;background:linear-gradient(145deg,#dce8e3,#eadfc8)}
+    .badge-years{position:absolute;left:-24px;bottom:-24px;background:var(--off);border:1px solid var(--border);border-radius:16px;padding:16px 20px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+    .badge-years strong{display:block;font-family:var(--serif);font-size:27px;color:var(--petrol);font-weight:400}
+    .badge-years span{font-size:10px;letter-spacing:.16em;color:var(--muted)}
+    .badge-hours{position:absolute;right:-18px;top:-20px;width:96px;height:96px;border-radius:50%;background:var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.1);color:var(--petrol-deep)}
+    .badge-hours strong{font-family:var(--serif);font-size:22px;font-weight:400}
+    .badge-hours span{font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+    .pillars-strip{border-top:1px solid rgba(222,216,207,.65);background:var(--off)}
+    .pillars-strip .container{padding-top:42px;padding-bottom:45px}
+    .strip-title{text-align:center;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:rgba(61,110,114,.7);margin-bottom:34px}
+    .pillars{display:grid;grid-template-columns:repeat(5,1fr);gap:26px}
+    .pillar{text-align:center}
+    .round-icon{width:58px;height:58px;border-radius:50%;border:1px solid rgba(189,153,77,.5);display:flex;align-items:center;justify-content:center;margin:0 auto 13px;color:var(--gold);transition:.25s}
+    .pillar:hover .round-icon{background:rgba(189,153,77,.1);transform:scale(1.05)}
+    .pillar p{font-size:14px;color:rgba(39,77,80,.8);margin:0}
+    .identify-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:start}
+    .identify-grid .eyebrow{justify-content:flex-start}
+    .identify-grid .eyebrow:before{display:none}
+    .check-list{list-style:none;padding:0;margin:34px 0 0}
+    .check-list li{display:flex;gap:14px;margin:0 0 17px;line-height:1.65;color:rgba(39,77,80,.82)}
+    .check-dot{width:24px;height:24px;border-radius:50%;background:rgba(140,175,167,.25);display:flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:2px;color:var(--petrol)}
+    .origin-card{background:var(--off);border:1px solid rgba(222,216,207,.75);border-radius:18px;padding:34px;box-shadow:var(--shadow-soft)}
+    .origin-top{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;border:2px solid rgba(189,153,77,.5);background:#e5ded5;flex:0 0 auto}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .origin-kicker{font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:rgba(61,110,114,.72);margin-bottom:8px}
+    .origin-title{font-family:var(--serif);font-size:25px;color:var(--petrol-deep);line-height:1.15}
+    .flow-copy{text-align:center;max-width:820px;margin:0 auto}
+    .flow{margin-top:58px;display:flex;align-items:flex-start;justify-content:center}
+    .flow-step{display:flex;align-items:flex-start;flex:1}
+    .flow-node{flex:1;text-align:center}
+    .flow-node .round-icon{background:var(--beige);color:var(--petrol);width:64px;height:64px}
+    .flow-node p{font-size:12px;color:rgba(39,77,80,.75);line-height:1.3;max-width:100px;margin:0 auto}
+    .flow-arrow{color:var(--gold);padding-top:22px}
+    .cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .module-card{background:var(--off);border:1px solid rgba(222,216,207,.75);border-radius:18px;padding:28px;transition:.35s}
+    .module-card:hover{transform:translateY(-4px);border-color:rgba(189,153,77,.6)}
+    .module-card .round-icon{margin:0 0 18px;background:rgba(195,216,210,.5);border:0;color:var(--petrol);width:48px;height:48px}
+    .module-num{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+    .module-card h3{font-size:20px;line-height:1.2;color:var(--petrol-deep);margin-bottom:11px}
+    .module-card p{font-size:14px;line-height:1.7;color:rgba(39,77,80,.66);margin:0}
+    .journey{max-width:760px;margin:0 auto}
+    .journey-row{display:grid;grid-template-columns:58px 1fr;gap:22px;position:relative;padding-bottom:34px}
+    .journey-row:not(:last-child):before{content:"";position:absolute;left:28px;top:54px;bottom:0;width:1px;background:rgba(189,153,77,.4)}
+    .journey-icon{width:56px;height:56px;border-radius:50%;background:var(--off);border:1px solid rgba(189,153,77,.5);display:flex;align-items:center;justify-content:center;color:var(--petrol);z-index:2}
+    .journey-row h3{font-size:24px;margin:5px 0 7px;color:var(--petrol-deep)}
+    .journey-row p{color:rgba(39,77,80,.7);line-height:1.6}
+    .method{position:relative;text-align:center}
+    .method blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(34px,5vw,54px);line-height:1.2;margin:0 auto;color:var(--off);max-width:900px}
+    .neuro-letters{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;max-width:760px;margin:52px auto 0}
+    .neuro-letter strong{font-family:var(--serif);font-size:clamp(42px,6vw,64px);font-weight:400;color:var(--gold);display:block;line-height:1}
+    .neuro-letter span{display:block;margin-top:8px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(250,248,244,.7)}
+    .triple{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .soft-card{background:var(--beige);border-radius:18px;padding:30px;min-height:100%}
+    .soft-kicker{font-size:10px;text-transform:uppercase;letter-spacing:.22em;color:var(--petrol);margin-bottom:20px}
+    .testimonial-quote{font-style:italic;line-height:1.75;color:rgba(39,77,80,.8)}
+    .certificate{background:var(--off);border:1px solid rgba(189,153,77,.35);border-radius:10px;padding:20px;text-align:center}
+    .certificate hr{border:0;border-top:1px solid var(--border)}
+    .seal{width:58px;height:58px;border:2px solid var(--gold);border-radius:50%;margin:14px auto 0;display:flex;align-items:center;justify-content:center;color:var(--gold)}
+    .founder-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:62px;align-items:center}
+    .founder-photo{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:linear-gradient(145deg,#dce8e3,#eadfc8);box-shadow:var(--shadow-card)}
+    .founder-photo img{width:100%;height:100%;object-fit:cover}
+    .founder-grid .eyebrow{justify-content:flex-start}
+    .founder-grid .eyebrow:before{display:none}
+    .founder-sub{text-transform:uppercase;letter-spacing:.16em;font-size:13px;color:var(--muted)}
+    .founder-text{line-height:1.75;color:rgba(39,77,80,.75);margin-top:25px}
+    .mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:450px;margin-top:30px}
+    .mini-stat{text-align:center;font-size:11px;color:rgba(39,77,80,.7)}
+    .mini-stat .round-icon{width:44px;height:44px;border:0;background:rgba(195,216,210,.5);color:var(--petrol);margin-bottom:8px}
+    .audience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 10px}
+    .audience-item{display:flex;gap:9px;font-size:12px;line-height:1.4;color:rgba(39,77,80,.8)}
+    .bonus-list{list-style:none;padding:0;margin:0}
+    .bonus-list li{display:flex;gap:11px;margin-bottom:14px;font-size:14px;color:rgba(39,77,80,.8)}
+    .guarantee{display:flex;gap:20px;align-items:flex-start}
+    .days{width:80px;height:80px;border:2px solid var(--gold);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto}
+    .days strong{font-family:var(--serif);font-size:26px;font-weight:400}
+    .days span{font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .review-card{background:var(--off);border:1px solid rgba(222,216,207,.7);border-radius:18px;padding:28px}
+    .stars{color:var(--gold);letter-spacing:3px;margin-bottom:15px}
+    .review-card .quote{font-style:italic;font-size:14px;line-height:1.75;color:rgba(39,77,80,.8)}
+    .review-card .person{border-top:1px solid var(--border);margin-top:22px;padding-top:16px}
+    .review-card .person strong{font-family:var(--serif);font-weight:400}
+    .review-card .person small{display:block;margin-top:4px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+    .faq-list{display:flex;flex-direction:column;gap:12px}
+    .faq-item{border:1px solid var(--border);border-radius:12px;background:rgba(243,238,231,.45);overflow:hidden}
+    .faq-q{width:100%;padding:20px 23px;border:0;background:transparent;text-align:left;font-family:var(--serif);font-size:18px;color:var(--petrol-deep);display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+    .faq-a{display:none;padding:0 23px 20px;font-size:14px;line-height:1.75;color:rgba(39,77,80,.75)}
+    .faq-item.open .faq-a{display:block}
+    .faq-item.open .faq-q .plus{transform:rotate(45deg)}
+    .plus{font-size:25px;color:var(--petrol);transition:.2s}
+    .investment{background:#f7f3ee}
+    .bonus-value-box{background:var(--off);border:1px solid rgba(222,216,207,.6);border-radius:18px;padding:28px;box-shadow:var(--shadow-soft)}
+    .bonus-values{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .bonus-value{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px;border:1px solid rgba(222,216,207,.55);border-radius:12px;background:rgba(247,243,238,.7);font-size:14px}
+    .bonus-value b{font-size:13px;color:var(--gold);background:rgba(189,153,77,.1);padding:6px 10px;border-radius:999px;white-space:nowrap}
+    .total-bonus{text-align:center;border-top:1px solid var(--border);margin-top:20px;padding-top:18px}
+    .total-bonus span{font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:rgba(61,110,114,.7)}
+    .total-bonus strong{display:block;font-family:var(--serif);font-size:30px;color:var(--petrol-deep);font-weight:400;margin-top:5px}
+    .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
+    .price-card{border-radius:18px;padding:30px;text-align:center;background:var(--off);box-shadow:var(--shadow-soft)}
+    .price-card.highlight{background:var(--petrol);color:white}
+    .price-card .kicker{font-size:10px;text-transform:uppercase;letter-spacing:.2em;opacity:.7}
+    .price-card .price{font-family:var(--serif);font-size:38px;margin:8px 0 5px}
+    .price-card .muted{font-size:14px;opacity:.8}
+    .price-card .strike{text-decoration:line-through;opacity:.55}
+    .final-cta{text-align:center}
+    .final-cta h2{font-size:clamp(40px,5.5vw,62px);line-height:1.08;color:var(--off);max-width:900px;margin:0 auto}
+    .final-cta h2 em{color:var(--gold);font-style:italic}
+    .final-cta p{color:rgba(250,248,244,.7);font-size:18px;line-height:1.7;max-width:650px;margin:28px auto}
+    .final-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+    .fineprint{font-size:10px!important;text-transform:uppercase;letter-spacing:.15em!important;color:rgba(250,248,244,.5)!important;margin-top:28px!important}
+    footer{background:var(--petrol-deep);border-top:1px solid rgba(250,248,244,.1);padding:30px 0}
+    .footer-features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .footer-feature{display:flex;justify-content:center;align-items:center;gap:10px;color:rgba(250,248,244,.7);font-size:10px;text-transform:uppercase;letter-spacing:.13em}
+    .copyright{text-align:center;border-top:1px solid rgba(250,248,244,.1);margin-top:26px;padding-top:20px;color:rgba(250,248,244,.4);font-size:9px;text-transform:uppercase;letter-spacing:.13em}
+    .text-center{text-align:center}
+    .mb-lg{margin-bottom:54px}
+    .mt-lg{margin-top:42px}
+    .local-assets-note{display:none}
+
+
+    .video-testimonial{display:grid;grid-template-columns:minmax(280px,420px) 1fr;gap:52px;align-items:center;margin-top:46px;background:var(--off);border:1px solid rgba(222,216,207,.7);border-radius:22px;padding:30px;box-shadow:var(--shadow-soft)}
+    .video-frame{position:relative;border-radius:18px;overflow:hidden;background:#111;box-shadow:var(--shadow-card);max-width:390px;margin:auto}
+    .video-frame video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#111}
+    .video-copy .eyebrow{justify-content:flex-start}
+    .video-copy .eyebrow:before{display:none}
+    .video-copy h3{font-size:clamp(32px,4vw,46px);line-height:1.12;color:var(--petrol-deep);margin-bottom:18px}
+    .video-copy p{line-height:1.75;color:rgba(39,77,80,.72)}
+    .video-note{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--petrol)}
+    .plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    .plan-card{position:relative;background:var(--off);border:1px solid rgba(222,216,207,.75);border-radius:20px;padding:28px;display:flex;flex-direction:column;min-height:310px;box-shadow:var(--shadow-soft);transition:.3s}
+    .plan-card:hover{transform:translateY(-4px);border-color:rgba(189,153,77,.55);box-shadow:var(--shadow-card)}
+    .plan-card.featured{border:2px solid var(--gold);background:linear-gradient(180deg,#fffdf8,var(--off))}
+    .plan-tag{display:inline-flex;align-self:flex-start;border-radius:999px;background:rgba(189,153,77,.12);color:#8d6b28;font-size:10px;text-transform:uppercase;letter-spacing:.14em;padding:7px 10px;margin-bottom:18px}
+    .plan-card h3{font-size:25px;line-height:1.2;color:var(--petrol-deep);margin-bottom:12px}
+    .plan-card p{font-size:14px;line-height:1.65;color:rgba(39,77,80,.68)}
+    .plan-features{list-style:none;padding:0;margin:8px 0 24px}
+    .plan-features li{display:flex;gap:9px;align-items:flex-start;margin-bottom:10px;font-size:13px;line-height:1.45;color:rgba(39,77,80,.76)}
+    .plan-features svg{width:16px;min-width:16px;color:var(--gold);margin-top:2px}
+    .plan-card .btn{margin-top:auto;width:100%}
+    .hotmart-note{text-align:center;margin-top:18px;font-size:11px;line-height:1.6;color:rgba(39,77,80,.58)}
+
+    @media(max-width:900px){
+      nav.desktop{display:none}
+      .nav{grid-template-columns:1fr auto}
+      .brand-wordmark{font-size:16px}
+      .hero-grid,.identify-grid,.founder-grid{grid-template-columns:1fr;gap:42px}
+      .hero{padding-top:118px}
+      .hero-media{max-width:560px;margin:0 auto}
+      .pillars{grid-template-columns:repeat(2,1fr)}
+      .flow{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+      .flow-arrow{display:none}
+      .triple,.reviews{grid-template-columns:1fr}
+      .founder-photo{max-width:520px;margin:0 auto}
+      .footer-features{grid-template-columns:repeat(2,1fr)}
+      .video-testimonial{grid-template-columns:1fr;gap:30px}
+      .plan-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .container,.container-sm{width:min(100% - 32px,1180px)}
+      .section{padding:72px 0}
+      .nav{height:66px}
+      .nav-cta{padding:10px 16px}
+      .hero{padding-top:105px}
+      .hero-grid{padding-bottom:64px}
+      .hero h1{font-size:48px}
+      .hero-copy{font-size:16px}
+      .hero-points{gap:12px}
+      .hero-actions .btn{width:100%}
+      .badge-years{left:-5px}
+      .badge-hours{right:-6px}
+      .pillars{gap:24px 12px}
+      .cards-grid{grid-template-columns:1fr}
+      .flow{grid-template-columns:repeat(3,1fr)}
+      .flow-node .round-icon{width:52px;height:52px}
+      .flow-node p{font-size:10px}
+      .neuro-letters{gap:8px}
+      .neuro-letter span{font-size:8px;letter-spacing:.08em}
+      .triple{gap:18px}
+      .bonus-values,.price-grid{grid-template-columns:1fr}
+      .bonus-value{align-items:flex-start;flex-direction:column}
+      .footer-features{grid-template-columns:1fr 1fr}
+      .footer-feature{justify-content:flex-start}
+      .origin-top{align-items:flex-start}
+      .avatar{width:78px;height:78px}
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand-wordmark" href="#">Estimulação <em>NeuroCriativa®</em></a>
+
+    <nav class="desktop">
+      <a href="#sobre">O que é</a>
+      <a href="#metodo">Método</a>
+      <a href="#conteudo">Formação</a>
+      <a href="#fundadora">Fundadora</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a href="#planos" class="btn btn-primary nav-cta">Inscreva-se</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-brand">
+          <span class="formation">FORMAÇÃO PROFISSIONAL</span>
+        </div>
+
+        <h1>Estimulação<br><em>NeuroCriativa</em><sup>®</sup></h1>
+
+        <div class="hero-copy">
+          <p>Você pode saber atender idosos e trabalhar com estimulação.</p>
+          <p>O que ninguém te ensinou é <span class="emphasis">transformar a arte e a criatividade de maneira estratégica e intencionais para estimular funções cognitiva.</span></p>
+          <p>Para isso a Formação em Estimulação NeuroCriativa vem te ensinar tudo isso. Como uma metodologia clínica que integra arte, criatividade e neurociência para promover um envelhecimento ativo.</p>
+        </div>
+
+        <div class="hero-points">
+          <span><i data-lucide="sparkles" class="icon gold"></i> Base científica</span>
+          <span><i data-lucide="shield-check" class="icon gold"></i> Aplicação prática</span>
+          <span><i data-lucide="award" class="icon gold"></i> Certificação 180h</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#planos" class="btn btn-gold">Quero fazer parte <i data-lucide="arrow-right" class="icon"></i></a>
+          <a href="#sobre" class="btn btn-ghost">Conhecer o método</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-photo">
+          <img src="hero-neurocriativa.jpg" alt="Sessão de estimulação neurocriativa com idosas pintando aquarela"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="image-fallback" style="display:none">Imagem original do projeto<br><small>hero-neurocriativa.jpg</small></div>
+        </div>
+        <div class="badge-years"><strong>+10 anos</strong><span>APLICANDO O MÉTODO</span></div>
+        <div class="badge-hours"><strong>180h</strong><span>Certificado</span></div>
+      </div>
+    </div>
+
+    <div class="pillars-strip">
+      <div class="container">
+        <p class="strip-title">Existe uma nova forma de estimular o cérebro</p>
+        <div class="pillars">
+          <div class="pillar"><div class="round-icon"><i data-lucide="brain"></i></div><p>Neurociência</p></div>
+          <div class="pillar"><div class="round-icon"><i data-lucide="palette"></i></div><p>Criatividade - Arte</p></div>
+          <div class="pillar"><div class="round-icon"><i data-lucide="heart"></i></div><p>Emoção</p></div>
+          <div class="pillar"><div class="round-icon"><i data-lucide="users"></i></div><p>Socialização</p></div>
+          <div class="pillar"><div class="round-icon"><i data-lucide="sprout"></i></div><p>Sentido de vida</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section beige">
+    <div class="container identify-grid">
+      <div>
+        <div class="eyebrow">Você se identifica?</div>
+        <h2 class="section-title">Se alguma dessas frases é sua, este método foi feito para você.</h2>
+        <ul class="check-list">
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Tenho medo de estar repetindo as mesmas estratégias e deixando de estimular outras habilidades importantes.</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Sinto que meu potencial como profissional é maior do que aquilo que consigo entregar hoje.</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Quero me sentir mais segura quando explico meu trabalho para famílias e colegas.</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Quero deixar de improvisar e ter uma metodologia que me dê direção.</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Será que existem formas mais eficazes de trabalhar que eu ainda não conheço? E se eu estiver ficando para trás?</span></li>
+        </ul>
+      </div>
+
+      <div class="origin-card">
+        <div class="origin-top">
+          <div class="avatar">
+            <img src="founder.jpg" alt="Dra. Isaura Borba"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='<div class=&quot;image-fallback&quot; style=&quot;font-size:18px;padding:0&quot;>IB</div>'">
+          </div>
+          <div>
+            <div class="origin-kicker">Como nasceu a Estimulação NeuroCriativa</div>
+            <div class="origin-title">Uma década de escuta clínica.</div>
+          </div>
+        </div>
+        <div class="lead" style="margin-top:24px">
+          <p>Foram mais de <strong>10 anos de trabalho</strong> com grupos de idosos — observando, estudando e vivenciando o poder transformador da arte, da criatividade e das histórias de vida.</p>
+          <p>Hoje, essa experiência se transforma em uma formação para que você possa transformar vidas também.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="flow-copy">
+        <div class="eyebrow">O que é a Estimulação NeuroCriativa®</div>
+        <h2 class="section-title">Uma abordagem integrada que estimula <em>corpo, mente, emoções e propósito</em>.</h2>
+        <p class="lead" style="margin-top:28px">
+          A Estimulação NeuroCriativa® é uma metodologia autoral que integra neurociência, criatividade, arte e desenvolvimento humano para promover a estimulação cognitiva de forma ampla e significativa. Por meio de experiências criativas, expressão artística, interação social e ressignificação de histórias de vida, a metodologia conduz a pessoa a uma experiência que estimula funções cognitivas, fortalece a reserva cognitiva, a neuroplasticidade, favorece o bem-estar emocional e amplia o sentido de vida, contribuindo para um envelhecimento ativo, saudável e com mais autonomia. Mais do que exercitar o cérebro, a Estimulação NeuroCriativa® convida a pessoa a continuar criando, aprendendo e se conectando consigo mesma e com o mundo.
+        </p>
+      </div>
+
+      <div class="flow">
+        <div class="flow-step"><div class="flow-node"><div class="round-icon"><i data-lucide="palette"></i></div><p>Arte</p></div><div class="flow-arrow">→</div></div>
+        <div class="flow-step"><div class="flow-node"><div class="round-icon"><i data-lucide="lightbulb"></i></div><p>Criatividade</p></div><div class="flow-arrow">→</div></div>
+        <div class="flow-step"><div class="flow-node"><div class="round-icon"><i data-lucide="brain"></i></div><p>Neuroplasticidade</p></div><div class="flow-arrow">→</div></div>
+        <div class="flow-step"><div class="flow-node"><div class="round-icon"><i data-lucide="heart"></i></div><p>Expressão emocional</p></div><div class="flow-arrow">→</div></div>
+        <div class="flow-step"><div class="flow-node"><div class="round-icon"><i data-lucide="waves"></i></div><p>Conexão social</p></div><div class="flow-arrow">→</div></div>
+        <div class="flow-step"><div class="flow-node"><div class="round-icon"><i data-lucide="shield-check"></i></div><p>Reserva cognitiva</p></div><div class="flow-arrow">→</div></div>
+        <div class="flow-step"><div class="flow-node"><div class="round-icon"><i data-lucide="sprout"></i></div><p>Envelhecimento ativo</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="conteudo" class="section beige">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <div class="eyebrow">Conteúdo da formação</div>
+        <h2 class="section-title">📖 Formação em Estimulação NeuroCriativa®</h2>
+        <p class="lead">7 módulos + Aula Inaugural e Aula de Encerramento · 180 horas · Supervisão clínica ao vivo</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="module-card"><div class="round-icon"><i data-lucide="book-open"></i></div><div class="module-num">Aula Inaugural</div><h3>Aula Inaugural | Bem-vinda à Formação</h3><p>Conheça a jornada que transformará sua forma de estimular o cérebro e promover um envelhecimento ativo através da criatividade, da arte e da neurociência.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="brain"></i></div><div class="module-num">Módulo 01</div><h3>MÓDULO 1 | Os Fundamentos da Estimulação NeuroCriativa®</h3><p>Compreenda a ciência que sustenta uma metodologia inovadora para estimular o cérebro de forma integral. Você aprenderá os principais conceitos da neurociência, criatividade, reserva cognitiva, neuroestética, simbolismo e envelhecimento, entendendo por que a Estimulação NeuroCriativa® vai muito além das atividades cognitivas tradicionais.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="palette"></i></div><div class="module-num">Módulo 02</div><h3>MÓDULO 2 | Vivenciando a Estimulação NeuroCriativa®</h3><p>Experimente na prática como a criatividade pode transformar a estimulação cognitiva. Vivencie o Método NeuroCriativo®, compreenda a estrutura de uma sessão e descubra como conduzir experiências que despertam cognição, emoção, conexão social e significado.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="file-text"></i></div><div class="module-num">Módulo 03</div><h3>MÓDULO 3 | Construindo Sessões NeuroCriativas®</h3><p>Aprenda a criar sessões envolventes, estruturadas e cientificamente fundamentadas. Você desenvolverá a habilidade de planejar atendimentos individuais e em grupo, utilizando arte, memória, criatividade e simbolismo de forma estratégica.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="star"></i></div><div class="module-num">Módulo 04</div><h3>MÓDULO 4 | Tornando-se uma Especialista em Estimulação NeuroCriativa®</h3><p>Construa uma identidade profissional forte e destaque-se em um mercado em crescimento. Descubra como definir seu posicionamento, escolher seu nicho de atuação e comunicar sua autoridade para conquistar reconhecimento e novas oportunidades.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="home"></i></div><div class="module-num">Módulo 05</div><h3>MÓDULO 5 | Estruturando o Programa Ateliê da Memória®</h3><p>Transforme sua metodologia em um programa organizado, replicável e de alto valor percebido. Aprenda a estruturar um programa completo de encontros, organizar sua rotina de atendimento e oferecer uma experiência diferenciada aos seus pacientes.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="briefcase"></i></div><div class="module-num">Módulo 06</div><h3>MÓDULO 6 | Transformando Conhecimento em Negócio</h3><p>Aprenda a precificar, vender e expandir seus serviços com segurança e propósito. Você aprenderá como definir seus valores, estruturar serviços individuais e em grupo, conduzir conversas de venda e apresentar sua metodologia com confiança.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="folder-open"></i></div><div class="module-num">Módulo 07</div><h3>MÓDULO 7 | Kit Profissional NeuroCriativo®</h3><p>Receba ferramentas práticas para aplicar a metodologia desde o primeiro atendimento. Tenha acesso a protocolos, instrumentos de avaliação, materiais de acompanhamento e modelos prontos para conduzir seus atendimentos com organização, segurança e qualidade.</p></article>
+        <article class="module-card"><div class="round-icon"><i data-lucide="graduation-cap"></i></div><div class="module-num">Aula de Encerramento</div><h3>Aula de Encerramento</h3><p>Apresente seu projeto final e consolide sua jornada como Facilitadora em Estimulação NeuroCriativa®. Um momento especial para compartilhar sua evolução, receber feedback e celebrar a conclusão da formação.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section beige" style="padding-top:72px">
+    <div class="container-sm">
+      <div class="text-center mb-lg">
+        <div class="eyebrow">Sua Jornada na Formação</div>
+        <h2 class="section-title" style="font-size:42px">A escalada que você vai percorrer</h2>
+      </div>
+      <div class="journey">
+        <div class="journey-row"><div class="journey-icon"><i data-lucide="brain"></i></div><div><h3>Compreender</h3><p>Descubra a ciência por trás da criatividade e do envelhecimento saudável.</p></div></div>
+        <div class="journey-row"><div class="journey-icon"><i data-lucide="palette"></i></div><div><h3>Vivenciar</h3><p>Experimente o Método NeuroCriativo® e compreenda sua aplicação na prática.</p></div></div>
+        <div class="journey-row"><div class="journey-icon"><i data-lucide="file-text"></i></div><div><h3>Criar</h3><p>Aprenda a desenvolver sessões estruturadas e transformadoras.</p></div></div>
+        <div class="journey-row"><div class="journey-icon"><i data-lucide="star"></i></div><div><h3>Posicionar-se</h3><p>Torne-se uma referência em uma área com alta demanda e pouca especialização.</p></div></div>
+        <div class="journey-row"><div class="journey-icon"><i data-lucide="briefcase"></i></div><div><h3>Empreender</h3><p>Estruture um serviço valorizado e financeiramente sustentável.</p></div></div>
+        <div class="journey-row"><div class="journey-icon"><i data-lucide="folder-open"></i></div><div><h3>Aplicar</h3><p>Receba protocolos e ferramentas para iniciar seus atendimentos com segurança.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="metodo" class="section petrol-bg method">
+    <div class="container">
+      <div class="eyebrow light">Método N.E.U.R.O.®</div>
+      <blockquote>"O cérebro floresce quando continua criando."</blockquote>
+      <div class="neuro-letters">
+        <div class="neuro-letter"><strong>N</strong><span>Neurociência</span></div>
+        <div class="neuro-letter"><strong>E</strong><span>Estímulo</span></div>
+        <div class="neuro-letter"><strong>U</strong><span>União</span></div>
+        <div class="neuro-letter"><strong>R</strong><span>Ressignificação</span></div>
+        <div class="neuro-letter"><strong>O</strong><span>Observação</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container triple">
+      <div class="soft-card">
+        <div class="soft-kicker">Ao concluir você será capaz de:</div>
+        <ul class="check-list" style="margin-top:0">
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Criar grupos significativos e transformadores</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Atender individualmente com mais profundidade</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Elaborar oficinas criativas com base científica</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Trabalhar criatividade, emoção e memória</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Aplicar arte como ferramenta terapêutica</span></li>
+          <li><span class="check-dot"><i data-lucide="check"></i></span><span>Diferenciar-se no mercado com autoridade</span></li>
+        </ul>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-kicker">Depoimentos</div>
+        <i data-lucide="quote" class="icon gold"></i>
+        <p class="testimonial-quote" style="margin-top:18px">"A formação mudou completamente minha forma de ver o envelhecimento e de conduzir grupos. Hoje vejo resultados que vão muito além da cognição."</p>
+        <div style="border-top:1px solid var(--border);margin-top:24px;padding-top:18px">
+          <strong style="font-family:var(--serif);font-weight:400">Juliana M.</strong><br>
+          <small style="text-transform:uppercase;letter-spacing:.13em;color:var(--muted)">Psicóloga</small>
+        </div>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-kicker">Certificado</div>
+        <div class="certificate">
+          <p style="font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:12px 0">Certificado de Conclusão</p>
+          <hr>
+          <p style="font-family:var(--serif);color:var(--petrol-deep);line-height:1.35">Formação em<br><em style="color:var(--petrol)">Estimulação NeuroCriativa®</em></p>
+          <div class="seal"><i data-lucide="award"></i></div>
+        </div>
+        <p class="lead" style="font-size:11px;margin-top:18px">Certificação de <strong>180 horas</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="fundadora" class="section beige">
+    <div class="container founder-grid">
+      <div class="founder-photo">
+        <img src="founder.jpg" alt="Dra. Isaura Borba — criadora da Estimulação NeuroCriativa®"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="image-fallback" style="display:none">Dra. Isaura Borba<br><small>adicione o arquivo founder.jpg</small></div>
+      </div>
+      <div>
+        <div class="eyebrow">Sobre a fundadora</div>
+        <h2 class="section-title">Dra. Isaura Borba</h2>
+        <p class="founder-sub">Psicóloga · PhD em Neurociência do Envelhecimento</p>
+        <div class="founder-text">
+          <p>Com mais de 20 anos de experiência clínica em geriatria e gerontologia, é a criadora do <em>Método N.E.U.R.O.</em>® e da Estimulação NeuroCriativa®.</p>
+          <p>Sua pesquisa integra neurociência cognitiva, psicologia clínica e processos criativos, com publicações em periódicos nacionais e internacionais. Já formou mais de <strong>2.500 profissionais</strong> em toda a América Latina.</p>
+        </div>
+        <div class="mini-stats">
+          <div class="mini-stat"><div class="round-icon"><i data-lucide="graduation-cap"></i></div>PhD USP</div>
+          <div class="mini-stat"><div class="round-icon"><i data-lucide="book-open"></i></div>Autora</div>
+          <div class="mini-stat"><div class="round-icon"><i data-lucide="award"></i></div>20+ anos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container triple">
+      <div class="soft-card">
+        <div class="soft-kicker">Para quem é esta formação</div>
+        <div class="audience-grid">
+          <div class="audience-item"><i data-lucide="brain" class="gold"></i> Psicólogas(os)</div>
+          <div class="audience-item"><i data-lucide="graduation-cap" class="gold"></i> Educadores</div>
+          <div class="audience-item"><i data-lucide="hand-heart" class="gold"></i> Terapeutas</div>
+          <div class="audience-item"><i data-lucide="user-round" class="gold"></i> Cuidadores</div>
+          <div class="audience-item"><i data-lucide="stethoscope" class="gold"></i> TO e reabilitação</div>
+          <div class="audience-item"><i data-lucide="sparkles" class="gold"></i> Profissionais da saúde</div>
+        </div>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-kicker">Bônus exclusivos</div>
+        <ul class="bonus-list">
+          <li><i data-lucide="file-text" class="gold"></i> Templates e materiais prontos</li>
+          <li><i data-lucide="palette" class="gold"></i> Banco de atividades criativas</li>
+          <li><i data-lucide="bot" class="gold"></i> IA para planejamento de sessões</li>
+          <li><i data-lucide="message-circle" class="gold"></i> Grupo exclusivo de alunos</li>
+        </ul>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-kicker">Garantia</div>
+        <div class="guarantee">
+          <div class="days"><strong>7</strong><span>Dias</span></div>
+          <p class="lead" style="font-size:14px">Você tem 7 dias para experimentar a formação. Se não for para você, devolvemos <strong>100%</strong> do seu investimento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section beige" id="depoimentos">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <div class="eyebrow">Depoimentos profissionais</div>
+        <h2 class="section-title">Profissionais que trabalharam com a Dra. Isaura.</h2>
+      </div>
+
+      <div class="reviews">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="quote">“As orientações e instruções recebidas pela Dra. Isaura Borba me ajudaram a encontrar estratégias de atendimento que antes eu não tinha.”</div>
+          <div class="person"><strong>Ayrton Menezes</strong><small>Psicólogo</small></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="quote">“A Estimulação NeuroCriativa ajudou meus pacientes idosos a adquirir mais paciência e tranquilidade.”</div>
+          <div class="person"><strong>Alba Regina</strong><small>Psicóloga</small></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="quote">“A formação me deu embasamento científico para utilizar a arte na estimulação com meus clientes de maneira clara e atrativa.”</div>
+          <div class="person"><strong>Joana França</strong><small>Terapeuta Integrativa</small></div>
+        </div>
+      </div>
+
+      <div class="video-testimonial">
+        <div class="video-frame">
+          <video controls playsinline preload="metadata" poster="depoimento-aluna-poster.jpg">
+            <source src="depoimento-aluna.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução deste vídeo.
+          </video>
+        </div>
+        <div class="video-copy">
+          <div class="eyebrow">Depoimento de quem fez</div>
+          <h3>Veja a experiência de uma aluna da formação.</h3>
+          <p>Um relato real de quem passou pela experiência da Formação em Estimulação NeuroCriativa® e levou o conteúdo para a prática profissional.</p>
+          <span class="video-note"><i data-lucide="play-circle"></i> Vídeo ajustado para uma visualização mais dinâmica</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container-sm">
+      <div class="text-center mb-lg">
+        <div class="eyebrow">Perguntas frequentes</div>
+        <h2 class="section-title">Antes de se inscrever, tire suas dúvidas.</h2>
+        <p class="lead">Respostas objetivas para ajudar você a decidir com segurança.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-q">O que é a Formação em Estimulação NeuroCriativa®?<span class="plus">+</span></button><div class="faq-a">É uma formação profissional que ensina uma metodologia autoral que integra neurociência, criatividade, arte, memória, emoção e interação social para promover um envelhecimento mais ativo, significativo e cognitivamente estimulante.</div></div>
+        <div class="faq-item"><button class="faq-q">Para quem é a formação?<span class="plus">+</span></button><div class="faq-a">Para psicólogas, terapeutas, profissionais da saúde, educação e outras áreas que desejam trabalhar com pessoas 60+ ou ampliar sua atuação profissional com uma metodologia diferenciada de estimulação cognitiva e desenvolvimento humano.</div></div>
+        <div class="faq-item"><button class="faq-q">Preciso ter experiência com idosos?<span class="plus">+</span></button><div class="faq-a">Não. A formação foi estruturada para oferecer desde os fundamentos científicos até a aplicação prática, permitindo que você desenvolva segurança para começar ou aprimorar sua atuação.</div></div>
+        <div class="faq-item"><button class="faq-q">Qual é o diferencial da Estimulação NeuroCriativa®?<span class="plus">+</span></button><div class="faq-a">Enquanto a estimulação cognitiva tradicional costuma concentrar-se em funções como memória e atenção, a Estimulação NeuroCriativa® amplia o olhar para a pessoa como um todo, integrando cognição, criatividade, emoção, socialização, história de vida, identidade e significado.</div></div>
+        <div class="faq-item"><button class="faq-q">Vou aprender a criar e aplicar minhas próprias sessões?<span class="plus">+</span></button><div class="faq-a">Sim. Você aprenderá a estruturar sessões individuais e em grupo, utilizando arte, criatividade, memória e simbolismo de maneira planejada e intencional.</div></div>
+        <div class="faq-item"><button class="faq-q">Receberei materiais para utilizar na prática?<span class="plus">+</span></button><div class="faq-a">Sim. A formação inclui materiais das aulas, protocolos exclusivos, modelos de planejamento, instrumentos de acompanhamento e outros recursos para facilitar sua aplicação profissional.</div></div>
+        <div class="faq-item"><button class="faq-q">Terei acompanhamento durante a aplicação?<span class="plus">+</span></button><div class="faq-a">Sim. Além das aulas, a formação oferece supervisão em grupo com a criadora do método e acompanhamento da aplicação, para que você tenha mais segurança ao transformar o conhecimento em prática.</div></div>
+        <div class="faq-item"><button class="faq-q">Como posso utilizar essa formação profissionalmente?<span class="plus">+</span></button><div class="faq-a">Você poderá estruturar atendimentos individuais, grupos, oficinas e programas de estimulação para idosos, de acordo com sua formação profissional, habilitação e regulamentação da sua área de atuação.</div></div>
+        <div class="faq-item"><button class="faq-q">Vou aprender a transformar a metodologia em um serviço?<span class="plus">+</span></button><div class="faq-a">Sim. A formação também aborda posicionamento profissional, definição de nicho, estruturação de serviços, precificação e estratégias de venda, ajudando você a transformar conhecimento em uma oportunidade profissional sustentável.</div></div>
+        <div class="faq-item"><button class="faq-q">A formação é uma técnica terapêutica ou substitui tratamentos médicos e psicológicos?<span class="plus">+</span></button><div class="faq-a">Não. A Estimulação NeuroCriativa® é uma metodologia de estimulação e desenvolvimento que deve ser aplicada respeitando a formação, as competências profissionais e os limites éticos de cada profissional. Ela não substitui diagnóstico, tratamento médico, psicológico ou qualquer acompanhamento especializado quando necessário.</div></div>
+        <div class="faq-item"><button class="faq-q">Como funciona o acesso à formação?<span class="plus">+</span></button><div class="faq-a">Você terá acesso às aulas e materiais da formação pela plataforma, podendo acompanhar o conteúdo conforme a organização e as condições apresentadas no momento da inscrição. Os detalhes de acesso, duração e certificação estarão disponíveis no momento da compra.</div></div>
+        <div class="faq-item"><button class="faq-q">Por que fazer essa formação agora?<span class="plus">+</span></button><div class="faq-a">Porque o envelhecimento da população está criando novas demandas profissionais, e existe uma oportunidade para profissionais que desejam atuar com idosos de uma forma mais criativa, humana e estruturada. Você pode passar anos tentando construir seu próprio caminho ou aprender uma metodologia desenvolvida a partir de anos de experiência prática e começar sua jornada com muito mais clareza e direção.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section investment" id="planos">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <div class="soft-kicker">Inscrição</div>
+        <h2 class="section-title">Escolha a condição de pagamento que funciona melhor para você.</h2>
+        <p class="lead">As três opções abaixo levam diretamente para o checkout oficial da Formação em Estimulação NeuroCriativa® na Hotmart.</p>
+      </div>
+
+      <div class="plan-grid">
+        <article class="plan-card">
+          <span class="plan-tag">Opção 1</span>
+          <h3>À vista ou parcelado no cartão</h3>
+          <p>Uma opção para quem deseja finalizar a inscrição escolhendo, no checkout, entre pagamento à vista ou parcelamento disponível no cartão.</p>
+          <ul class="plan-features">
+            <li><i data-lucide="check-circle"></i><span>Checkout oficial Hotmart</span></li>
+            <li><i data-lucide="credit-card"></i><span>Condições apresentadas no momento da compra</span></li>
+            <li><i data-lucide="shield-check"></i><span>Pagamento processado pela Hotmart</span></li>
+          </ul>
+          <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+             href="https://pay.hotmart.com/B105836264J?off=gmpl9ds5&bid=1787247603132">
+             Ver esta opção <i data-lucide="external-link"></i>
+          </a>
+        </article>
+
+        <article class="plan-card featured">
+          <span class="plan-tag">Opção 2</span>
+          <h3>Formação Completa à vista</h3>
+          <p>Para quem prefere realizar a compra da formação completa em pagamento à vista diretamente pelo checkout.</p>
+          <ul class="plan-features">
+            <li><i data-lucide="check-circle"></i><span>Formação completa</span></li>
+            <li><i data-lucide="badge-check"></i><span>Oferta específica para pagamento à vista</span></li>
+            <li><i data-lucide="shield-check"></i><span>Checkout oficial e seguro</span></li>
+          </ul>
+          <a class="btn btn-gold" target="_blank" rel="noopener noreferrer"
+             href="https://pay.hotmart.com/B105836264J?off=4y2m4rqv&bid=1787247603734">
+             Ver opção à vista <i data-lucide="external-link"></i>
+          </a>
+        </article>
+
+        <article class="plan-card">
+          <span class="plan-tag">Opção 3</span>
+          <h3>Formação Completa em 8 pagamentos</h3>
+          <p>Uma alternativa para distribuir o investimento ao longo de 8 pagamentos mensais, conforme as condições exibidas pela Hotmart.</p>
+          <ul class="plan-features">
+            <li><i data-lucide="calendar-days"></i><span>8 pagamentos mensais</span></li>
+            <li><i data-lucide="check-circle"></i><span>Formação completa</span></li>
+            <li><i data-lucide="shield-check"></i><span>Pagamento processado pela Hotmart</span></li>
+          </ul>
+          <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+             href="https://pay.hotmart.com/B105836264J?off=52whgk1u&bid=1787247604833">
+             Ver opção em 8 pagamentos <i data-lucide="external-link"></i>
+          </a>
+        </article>
+      </div>
+
+      <p class="hotmart-note">Os valores, moeda, parcelamento e eventuais encargos são exibidos pela Hotmart no checkout de acordo com a oferta, país e forma de pagamento selecionada.</p>
+    </div>
+  </section>
+
+  <section id="inscricao" class="section petrol-bg final-cta">
+    <div class="container-sm">
+      <h2>Sua próxima turma de idosos pode viver uma experiência <em>completamente diferente</em>.</h2>
+      <p>Torne-se referência em envelhecimento saudável com uma metodologia autoral, sensível e cientificamente embasada.</p>
+      <div class="final-actions">
+        <a href="#planos" class="btn btn-gold">Escolher minha forma de inscrição <i data-lucide="arrow-up"></i></a>
+      </div>
+      <p class="fineprint">Escolha uma das 3 condições de pagamento e finalize sua inscrição no checkout oficial da Hotmart.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-features">
+      <div class="footer-feature"><i data-lucide="book-open" class="gold"></i> Metodologia autoral</div>
+      <div class="footer-feature"><i data-lucide="sparkles" class="gold"></i> Base científica</div>
+      <div class="footer-feature"><i data-lucide="hand-heart" class="gold"></i> Aplicação prática</div>
+      <div class="footer-feature"><i data-lucide="users" class="gold"></i> Apoio contínuo</div>
+    </div>
+    <div class="copyright">© 2026 Estimulação NeuroCriativa® · Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      document.querySelectorAll('.faq-item').forEach(x => {
+        if (x !== item) x.classList.remove('open');
+      });
+      item.classList.toggle('open');
+    });
+  });
+
+  if (window.lucide) lucide.createIcons();
+
+  if (location.hash) {
+    window.addEventListener('load', () => {
+      const target = document.querySelector(location.hash);
+      if (target) setTimeout(() => target.scrollIntoView({behavior:'smooth'}), 120);
+    });
+  }
+</script>
+</body>
+</html>
